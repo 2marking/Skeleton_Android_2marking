@@ -89,6 +89,6 @@ class SkeletonAdapter : RecyclerView.Adapter<ViewHolder>() {
     }
 
     private fun doesArrayOfLayoutsExist(): Boolean {
-        return mLayoutArrayReferences != null && mLayoutArrayReferences!!.size != 0
+        return mLayoutArrayReferences != null && mLayoutArrayReferences!!.isNotEmpty()
     }
 }

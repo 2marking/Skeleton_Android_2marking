@@ -17,7 +17,7 @@ class RecyclerViewSkeletonScreen private constructor(builder: Builder) :
     override fun show() {
         mRecyclerView.adapter = mSkeletonAdapter
         if (!mRecyclerView.isComputingLayout && mRecyclerViewFrozen) {
-            mRecyclerView.isLayoutFrozen = true
+            mRecyclerView.suppressLayout(true)
         }
     }
 

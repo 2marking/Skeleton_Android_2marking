@@ -14,6 +14,7 @@ class ViewReplacer(val sourceView: View) {
     private val mSourceViewLayoutParams: ViewGroup.LayoutParams = sourceView.layoutParams
     private var mSourceViewIndexInParent = 0
     private val mSourceViewId: Int
+
     fun replace(targetViewResID: Int) {
         if (mTargetViewResID == targetViewResID) return
         if (init()) {
