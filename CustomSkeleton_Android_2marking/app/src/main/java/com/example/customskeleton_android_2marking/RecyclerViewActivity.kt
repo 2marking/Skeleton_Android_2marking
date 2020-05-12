@@ -31,9 +31,7 @@ class RecyclerViewActivity : AppCompatActivity() {
             )
             val adapter = NewsAdapter()
             val skeletonScreen: SkeletonScreen =
-                Skeleton.bind(
-                    recyclerView
-                )
+                Skeleton.bind(recyclerView)
                     .adapter(adapter)
                     .shimmer(true)
                     .angle(20)
@@ -49,9 +47,7 @@ class RecyclerViewActivity : AppCompatActivity() {
             recyclerView.layoutManager = GridLayoutManager(this, 2)
             val adapter = PersonAdapter()
             val skeletonScreen: SkeletonScreen =
-                Skeleton.bind(
-                    recyclerView
-                )
+                Skeleton.bind(recyclerView)
                     .adapter(adapter)
                     .load(R.layout.item_skeleton_person)
                     .shimmer(false)

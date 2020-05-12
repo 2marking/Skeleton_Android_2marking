@@ -9,29 +9,23 @@ class ViewReplacer(val sourceView: View) {
     var targetView: View? = null
         private set
     private var mTargetViewResID = -1
-    var currentView: View?
-        private set
+    private var currentView: View?
     private var mSourceParentView: ViewGroup? = null
-    private val mSourceViewLayoutParams: ViewGroup.LayoutParams
+    private val mSourceViewLayoutParams: ViewGroup.LayoutParams = sourceView.layoutParams
     private var mSourceViewIndexInParent = 0
     private val mSourceViewId: Int
     fun replace(targetViewResID: Int) {
-        if (mTargetViewResID == targetViewResID) {
-            return
-        }
+        if (mTargetViewResID == targetViewResID) return
         if (init()) {
             mTargetViewResID = targetViewResID
             replace(
-                LayoutInflater.from(sourceView.context)
-                    .inflate(mTargetViewResID, mSourceParentView, false)
+                LayoutInflater.from(sourceView.context).inflate(mTargetViewResID, mSourceParentView, false)
             )
         }
     }
 
     fun replace(targetView: View) {
-        if (currentView === targetView) {
-            return
-        }
+        if (currentView === targetView) return
         if (targetView.parent != null) {
             (targetView.parent as ViewGroup).removeView(targetView)
         }
@@ -88,7 +82,6 @@ class ViewReplacer(val sourceView: View) {
     }
 
     init {
-        mSourceViewLayoutParams = sourceView.layoutParams
         currentView = sourceView
         mSourceViewId = sourceView.id
     }

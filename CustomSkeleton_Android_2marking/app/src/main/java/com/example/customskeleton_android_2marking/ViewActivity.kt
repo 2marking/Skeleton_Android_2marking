@@ -18,7 +18,7 @@ class ViewActivity : AppCompatActivity() {
     private var skeletonScreen: SkeletonScreen? = null
 
     class MyHandler internal constructor(activity: ViewActivity?) : Handler() {
-        private val activityWeakReference: WeakReference<ViewActivity?>
+        private val activityWeakReference: WeakReference<ViewActivity?> = WeakReference(activity)
         override fun handleMessage(msg: Message) {
             super.handleMessage(msg)
             if (activityWeakReference.get() != null) {
@@ -26,9 +26,6 @@ class ViewActivity : AppCompatActivity() {
             }
         }
 
-        init {
-            activityWeakReference = WeakReference(activity)
-        }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
