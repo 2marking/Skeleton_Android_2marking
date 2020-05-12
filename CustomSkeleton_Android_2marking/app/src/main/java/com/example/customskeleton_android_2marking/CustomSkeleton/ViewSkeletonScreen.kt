@@ -10,7 +10,7 @@ import androidx.annotation.IntRange
 import androidx.annotation.LayoutRes
 import androidx.core.content.ContextCompat
 import com.example.customskeleton_android_2marking.R
-import io.supercharge.shimmerlayout.ShimmerLayout
+import com.example.customskeleton_android_2marking.ShimmerLayout.ShimmerLayout
 
 class ViewSkeletonScreen private constructor(builder: Builder) :
     SkeletonScreen {

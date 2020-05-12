@@ -5,7 +5,7 @@ import android.view.ViewGroup
 import androidx.annotation.IntRange
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import io.supercharge.shimmerlayout.ShimmerLayout
+import com.example.customskeleton_android_2marking.ShimmerLayout.ShimmerLayout
 
 class SkeletonAdapter : RecyclerView.Adapter<ViewHolder>() {
     private var mItemCount = 0

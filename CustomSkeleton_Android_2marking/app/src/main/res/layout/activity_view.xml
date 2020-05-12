@@ -17,7 +17,7 @@
             android:layout_height="160dp"
             android:scaleType="centerCrop"
             android:src="@drawable/girl" />
-        <androidx.constraintlayout.widget.ConstraintLayoutConstraintLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@android:color/white"
@@ -73,7 +73,7 @@
                 app:layout_constraintLeft_toRightOf="@+id/tv_service"
                 app:layout_constraintRight_toRightOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayoutConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <View
             android:id="@+id/divider_1"

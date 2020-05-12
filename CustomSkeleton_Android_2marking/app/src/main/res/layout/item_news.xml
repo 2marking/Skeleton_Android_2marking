@@ -39,7 +39,7 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="@+id/img_news"
         app:layout_constraintVertical_bias="0.1"
-        android:text="Google正式发布Android8.0" />
+        android:text="Google Android8.0" />
 
     <TextView
         android:id="@+id/tv_content"
@@ -53,7 +53,7 @@
         app:layout_constraintLeft_toLeftOf="@+id/tv_title"
         app:layout_constraintTop_toTopOf="@+id/img_news"
         app:layout_constraintBottom_toBottomOf="@+id/img_news"
-        android:text="2017-09-01 Google正式发布Android8.0系统，此次系统命名为O，除了优化性能提高整体系统流畅度外，还新增了一些特性..." />
+        android:text="2017-09-01 Google Android8.0, Test Skeleton Custom..." />
 
     <TextView
         android:id="@+id/tv_time"

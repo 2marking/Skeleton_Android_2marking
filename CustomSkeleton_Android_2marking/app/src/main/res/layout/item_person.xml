@@ -11,7 +11,7 @@
         android:layout_width="70dp"
         android:layout_height="70dp" />
     <TextView
-        android:text="Vin Diesel"
+        android:text="King's Man"
         android:layout_marginTop="10dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
