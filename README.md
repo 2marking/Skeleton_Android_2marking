@@ -1,1 +1,1 @@
-# Skeleton_Android_2marking
+# 업데이트 예정
