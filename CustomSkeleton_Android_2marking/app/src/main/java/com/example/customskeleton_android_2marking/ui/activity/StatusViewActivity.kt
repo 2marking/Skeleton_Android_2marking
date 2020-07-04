@@ -1,4 +1,4 @@
-package com.example.customskeleton_android_2marking
+package com.example.customskeleton_android_2marking.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import android.provider.Settings
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.customskeleton_android_2marking.CustomSkeleton.ViewReplacer
+import com.example.customskeleton_android_2marking.R
 
 class StatusViewActivity : AppCompatActivity() {
     private var mViewReplacer: ViewReplacer? = null
@@ -13,9 +14,15 @@ class StatusViewActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_status_view)
         mViewReplacer = ViewReplacer(findViewById(R.id.tv_content))
-        findViewById<View>(R.id.btn_loading).setOnClickListener { mViewReplacer!!.replace(R.layout.layout_progress) }
-        findViewById<View>(R.id.btn_error).setOnClickListener { mViewReplacer!!.replace(R.layout.layout_error) }
-        findViewById<View>(R.id.btn_empty).setOnClickListener { mViewReplacer!!.replace(R.layout.layout_empty_view) }
+        findViewById<View>(R.id.btn_loading).setOnClickListener { mViewReplacer!!.replace(
+            R.layout.layout_progress
+        ) }
+        findViewById<View>(R.id.btn_error).setOnClickListener { mViewReplacer!!.replace(
+            R.layout.layout_error
+        ) }
+        findViewById<View>(R.id.btn_empty).setOnClickListener { mViewReplacer!!.replace(
+            R.layout.layout_empty_view
+        ) }
         findViewById<View>(R.id.btn_content).setOnClickListener { mViewReplacer!!.restore() }
     }
 

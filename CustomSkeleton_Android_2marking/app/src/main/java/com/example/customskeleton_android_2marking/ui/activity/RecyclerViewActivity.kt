@@ -1,4 +1,4 @@
-package com.example.customskeleton_android_2marking
+package com.example.customskeleton_android_2marking.ui.activity
 
 import android.content.Context
 import android.content.Intent
@@ -9,8 +9,9 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.customskeleton_android_2marking.CustomSkeleton.Skeleton
 import com.example.customskeleton_android_2marking.CustomSkeleton.SkeletonScreen
-import com.example.customskeleton_android_2marking.adapter.NewsAdapter
-import com.example.customskeleton_android_2marking.adapter.PersonAdapter
+import com.example.customskeleton_android_2marking.R
+import com.example.customskeleton_android_2marking.ui.adapter.NewsAdapter
+import com.example.customskeleton_android_2marking.ui.adapter.PersonAdapter
 
 class RecyclerViewActivity : AppCompatActivity() {
     private var mType: String? = null

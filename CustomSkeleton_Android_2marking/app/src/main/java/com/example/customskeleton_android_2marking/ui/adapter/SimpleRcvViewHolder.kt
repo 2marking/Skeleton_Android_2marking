@@ -1,4 +1,4 @@
-package com.example.customskeleton_android_2marking.adapter
+package com.example.customskeleton_android_2marking.ui.adapter
 
 import android.util.SparseArray
 import android.view.View

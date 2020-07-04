@@ -1,36 +1,37 @@
-package com.example.customskeleton_android_2marking
+package com.example.customskeleton_android_2marking.ui.activity
 
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
+import com.example.customskeleton_android_2marking.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         findViewById<View>(R.id.btn_list).setOnClickListener {
-            RecyclerViewActivity.Companion.start(
+            RecyclerViewActivity.start(
                 this@MainActivity,
-                RecyclerViewActivity.Companion.TYPE_LINEAR
+                RecyclerViewActivity.TYPE_LINEAR
             )
         }
         findViewById<View>(R.id.btn_grid).setOnClickListener {
-            RecyclerViewActivity.Companion.start(
+            RecyclerViewActivity.start(
                 this@MainActivity,
-                RecyclerViewActivity.Companion.TYPE_GRID
+                RecyclerViewActivity.TYPE_GRID
             )
         }
         findViewById<View>(R.id.btn_view).setOnClickListener {
-            ViewActivity.Companion.start(
+            ViewActivity.start(
                 this@MainActivity,
-                ViewActivity.Companion.TYPE_VIEW
+                ViewActivity.TYPE_VIEW
             )
         }
         findViewById<View>(R.id.btn_Imgloading).setOnClickListener {
-            ViewActivity.Companion.start(
+            ViewActivity.start(
                 this@MainActivity,
-                ViewActivity.Companion.TYPE_IMG_LOADING
+                ViewActivity.TYPE_IMG_LOADING
             )
         }
         findViewById<View>(R.id.btn_status).setOnClickListener {

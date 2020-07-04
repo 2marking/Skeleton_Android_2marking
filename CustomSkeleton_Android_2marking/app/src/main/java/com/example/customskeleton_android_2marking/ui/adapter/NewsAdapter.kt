@@ -1,14 +1,14 @@
-package com.example.customskeleton_android_2marking.adapter
+package com.example.customskeleton_android_2marking.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.customskeleton_android_2marking.R
 
-class PersonAdapter : RecyclerView.Adapter<SimpleRcvViewHolder>() {
+class NewsAdapter : RecyclerView.Adapter<SimpleRcvViewHolder>() {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SimpleRcvViewHolder {
         return SimpleRcvViewHolder(
-            LayoutInflater.from(parent.context).inflate(R.layout.item_person, parent, false)
+            LayoutInflater.from(parent.context).inflate(R.layout.item_news, parent, false)
         )
     }
 

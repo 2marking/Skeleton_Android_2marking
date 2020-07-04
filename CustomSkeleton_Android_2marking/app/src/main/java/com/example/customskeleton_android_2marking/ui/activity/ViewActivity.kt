@@ -1,4 +1,4 @@
-package com.example.customskeleton_android_2marking
+package com.example.customskeleton_android_2marking.ui.activity
 
 import android.content.Context
 import android.content.Intent
@@ -11,7 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.customskeleton_android_2marking.CustomSkeleton.Skeleton
 import com.example.customskeleton_android_2marking.CustomSkeleton.SkeletonScreen
-import com.example.customskeleton_android_2marking.adapter.TopicAdapter
+import com.example.customskeleton_android_2marking.R
+import com.example.customskeleton_android_2marking.ui.adapter.TopicAdapter
 import java.lang.ref.WeakReference
 
 class ViewActivity : AppCompatActivity() {
@@ -57,7 +58,10 @@ class ViewActivity : AppCompatActivity() {
                     .color(R.color.shimmer_color_for_image)
                     .show()
         }
-        val myHandler = MyHandler(this)
+        val myHandler =
+            MyHandler(
+                this
+            )
         myHandler.sendEmptyMessageDelayed(1, 3000)
     }
 

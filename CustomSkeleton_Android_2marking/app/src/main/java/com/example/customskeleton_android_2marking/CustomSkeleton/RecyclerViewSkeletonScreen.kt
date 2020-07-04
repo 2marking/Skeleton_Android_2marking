@@ -36,25 +36,16 @@ class RecyclerViewSkeletonScreen private constructor(builder: Builder) :
         var mShimmerAngle = 20
         var mFrozen = true
 
-        /**
-         * @param adapter the target recyclerView actual adapter
-         */
         fun adapter(adapter: RecyclerView.Adapter<*>?): Builder {
             mActualAdapter = adapter
             return this
         }
 
-        /**
-         * @param itemCount the child item count in recyclerView
-         */
         fun count(itemCount: Int): Builder {
             mItemCount = itemCount
             return this
         }
 
-        /**
-         * @param shimmer whether show shimmer animation
-         */
         fun shimmer(shimmer: Boolean): Builder {
             mShimmer = shimmer
             return this
